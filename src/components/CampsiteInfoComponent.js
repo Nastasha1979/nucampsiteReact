@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle}  from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle}  from 'reactstrap';
 
 class CampsiteInfo extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
 
     renderCampsite(campsite){
         return(
