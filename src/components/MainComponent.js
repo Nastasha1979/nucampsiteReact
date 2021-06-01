@@ -76,16 +76,16 @@ class Main extends Component {
                             key={this.props.location.key} 
                             classNames="page"
                             timeout={300}>
-                                <Switch>
+                            <Switch>
                                     <Route path='/home' component={HomePage} />
                                     <Route exact path="/directory" render={() => <Directory campsites={this.props.campsites} />} />
                                     <Route exact path="/contactus" render={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} />} />
                                     <Route path="/directory/:campsiteId" component={CampsiteWithId} />
                                     <Route exact path="/aboutus" render={() => <About partners={this.props.partners} />} />
                                     <Redirect to="/home" />
-                                </Switch>
+                            </Switch> 
                         </CSSTransition>
-                    </TransitionGroup>
+                    </TransitionGroup>      
                 <Footer />  
             </div>
         );

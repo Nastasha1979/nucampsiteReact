@@ -32,7 +32,10 @@ function RenderComments({comments, postComment, campsiteId}){
         return(
             <div className="col-md-5 m-1">
                 <h4>Comments</h4>
-                <Stagger in>
+                <Stagger 
+                    in
+                    chunk={4}
+                >
                     {comments.map(comment => {
                         return(
                             <Fade in key={comment.id}>

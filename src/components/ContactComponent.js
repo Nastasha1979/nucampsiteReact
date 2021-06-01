@@ -3,6 +3,7 @@ import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row }  from 'reactstrap
 import { Link } from "react-router-dom";
 import { Control, Form, Errors, actions } from "react-redux-form";
 
+
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
@@ -48,6 +49,7 @@ class Contact extends Component {
         
 
         return (
+            
             <div className="container">
                 <div className = "row">
                         <div className="col">
@@ -233,6 +235,7 @@ class Contact extends Component {
                     </div>
                 </div>
             </div>
+        
         );
     }
 }
