@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import { createForm, createForms } from "react-redux-form";
+import { createForms } from "react-redux-form";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
 import { Campsites } from "./campsites";
